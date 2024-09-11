@@ -1,0 +1,93 @@
+.linear-regression-container {
+  display: flex;
+}
+
+.left-nav {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Scrollable if content is too long */
+}
+
+.left-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-nav li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.left-nav li:hover {
+  background-color: #ddd;
+}
+
+.left-nav li.active {
+  background-color: #bbb;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 220px; /* Ensure space for the fixed navigation */
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.simulation {
+  display: block;
+}
+
+.linear-regression {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+}
+  
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.chart-container {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.controls {
+    margin-bottom: 20px;
+}
+  
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.controls button:hover {
+    background-color: #0056b3;
+}
+  
+.results p {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -3,10 +3,11 @@
     color: white;
     padding: 1rem 0;
     text-align: center;
-    position: fixed;
+    margin-top: 20px;
+    /* position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
   }
   
   .footer .container {

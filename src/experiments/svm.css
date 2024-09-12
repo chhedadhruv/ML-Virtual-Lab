@@ -1,40 +1,83 @@
-.svm-visualization {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .chart-container {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 20px;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-  }
-  
+/* svm.css */
+.svm-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.left-nav {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Scrollable if content is too long */
+}
+
+.left-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-nav li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.left-nav li:hover {
+  background-color: #ddd;
+}
+
+.left-nav li.active {
+  background-color: #bbb;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 220px; /* Ensure space for the fixed navigation */
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.simulation {
+  display: block;
+}
+
+.chart-container {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.results p {
+  font-size: 18px;
+  font-weight: bold;
+}

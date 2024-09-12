@@ -1,5 +1,6 @@
 .linear-regression-container {
   display: flex;
+  min-height: 80vh;
 }
 
 .left-nav {

@@ -1,75 +1,42 @@
-.kmeans-clustering {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .chart-container {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Spacing between buttons */
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-  }
-  
-  input[type="number"] {
-    padding: 5px;
-    width: 50px;
-    font-size: 16px;
-    margin-left: 5px;
-    text-align: center;
-  }
-  
-  label {
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
-  button.add-point {
-    background-color: #2196F3;
-  }
-  
-  button.clear-points {
-    background-color: #f44336;
-  }
-  
-  button.perform-clustering {
-    background-color: #ff9800;
-  }
-  
-  .controls div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.kmeans-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.left-nav {
+  width: 200px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.left-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-nav ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.left-nav ul li:hover,
+.left-nav ul li.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}

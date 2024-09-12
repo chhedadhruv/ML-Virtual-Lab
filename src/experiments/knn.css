@@ -1,49 +1,78 @@
-.knn-classification {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .chart-container {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 20px;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-  }
-  
-  input {
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
-  
+.knn-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.left-nav {
+  width: 200px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.left-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-nav ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.left-nav ul li:hover,
+.left-nav ul li.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.chart-container {
+  width: 80%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+label {
+  margin-right: 10px;
+}

@@ -11,6 +11,7 @@ import NaiveBayes from './experiments/NaiveBayes';
 import SVM from './experiments/SVM';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AboutUs from './pages/AboutUs';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/experiments/4" element={<KNN />} />
           <Route path="/experiments/5" element={<NaiveBayes />} />
           <Route path="/experiments/6" element={<SVM />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/feedback" element={<FeedbackForm />} />
         </Routes>
       <Footer />
